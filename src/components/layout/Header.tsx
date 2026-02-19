@@ -8,11 +8,35 @@ import MobileMenu from './MobileMenu';
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('');
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const sectionIds = NAV_LINKS.map((link) => link.href.replace('#', ''));
+    const observers: IntersectionObserver[] = [];
+
+    sectionIds.forEach((id) => {
+      const el = document.getElementById(id);
+      if (!el) return;
+
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setActiveSection(`#${id}`);
+          }
+        },
+        { rootMargin: '-40% 0px -50% 0px' }
+      );
+      observer.observe(el);
+      observers.push(observer);
+    });
+
+    return () => observers.forEach((o) => o.disconnect());
   }, []);
 
   return (
@@ -27,30 +51,40 @@ export default function Header() {
             : 'bg-transparent'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="section-container">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <a href="#" className="flex-shrink-0">
-              <span className="text-white font-serif text-2xl font-bold tracking-wider">LWK</span>
+              <span className="text-white font-serif text-2xl font-bold tracking-[0.15em]">LWK</span>
             </a>
 
             {/* Desktop Nav */}
             <nav className="hidden lg:flex items-center gap-8">
-              {NAV_LINKS.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  className="relative text-white/80 text-xs font-semibold tracking-[0.15em] hover:text-white transition-colors group"
-                >
-                  {link.label}
-                  <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] bg-accent-gold group-hover:w-full transition-all duration-300" />
-                </a>
-              ))}
+              {NAV_LINKS.map((link) => {
+                const isActive = activeSection === link.href;
+                return (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    aria-current={isActive ? 'true' : undefined}
+                    className={`relative text-xs font-semibold tracking-[0.15em] transition-colors group ${
+                      isActive ? 'text-white' : 'text-white/80 hover:text-white'
+                    }`}
+                  >
+                    {link.label}
+                    <span
+                      className={`absolute -bottom-1 left-0 h-[1.5px] bg-accent-gold transition-all duration-300 ${
+                        isActive ? 'w-full' : 'w-0 group-hover:w-full'
+                      }`}
+                    />
+                  </a>
+                );
+              })}
               <a
                 href={EXTERNAL_URLS.investorPortal}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="ml-4 px-5 py-2 border border-white/30 text-white text-xs font-semibold tracking-[0.15em] hover:bg-white/10 hover:border-white/60 transition-all duration-300"
+                className="ml-4 px-5 py-2 bg-accent-gold text-white border border-accent-gold text-xs font-semibold tracking-[0.15em] hover:bg-accent-gold/85 transition-all duration-300"
               >
                 INVESTOR PORTAL
               </a>

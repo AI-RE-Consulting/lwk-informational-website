@@ -17,8 +17,15 @@ export default function TeamCard({ member }: TeamCardProps) {
       variants={staggerItem}
       className="bg-white rounded-sm border border-gray-100 p-8 shadow-sm hover:shadow-md transition-shadow duration-300"
     >
-      <h3 className="font-serif text-xl text-gray-900">{member.name}</h3>
-      <p className="text-gray-600 text-sm mt-1 tracking-wide">{member.title}</p>
+      <div className="flex items-center gap-4">
+        <div className="w-14 h-14 rounded-full bg-navy-800 text-white font-serif text-lg flex items-center justify-center flex-shrink-0">
+          {member.name.split(' ').map(n => n[0]).join('')}
+        </div>
+        <div>
+          <h3 className="font-serif text-xl text-gray-900">{member.name}</h3>
+          <p className="text-gray-600 text-sm mt-1 tracking-[0.15em] uppercase">{member.title}</p>
+        </div>
+      </div>
 
       <div className="flex gap-3 mt-4">
         <a
@@ -45,7 +52,7 @@ export default function TeamCard({ member }: TeamCardProps) {
 
       <button
         onClick={() => setExpanded(!expanded)}
-        className="mt-5 text-sm text-accent-gold hover:text-accent-gold/80 font-medium tracking-wide transition-colors cursor-pointer"
+        className="mt-5 text-sm text-accent-gold hover:text-accent-gold/80 font-medium tracking-[0.15em] transition-colors cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-gold"
       >
         {expanded ? '— Close' : '+ Read Bio'}
       </button>

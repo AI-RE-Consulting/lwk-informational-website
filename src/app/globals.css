@@ -23,6 +23,11 @@ body {
   background: #ffffff;
 }
 
+:focus-visible {
+  outline: 2px solid var(--color-accent-gold);
+  outline-offset: 2px;
+}
+
 /* Hide scrollbar for press carousel */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
@@ -30,6 +35,18 @@ body {
 .scrollbar-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+@layer utilities {
+  .section-padding {
+    @apply py-20 lg:py-28;
+  }
+  .section-padding-compact {
+    @apply py-16 lg:py-20;
+  }
+  .section-container {
+    @apply max-w-7xl mx-auto px-6 lg:px-8;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

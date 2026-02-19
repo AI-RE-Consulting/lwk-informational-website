@@ -38,7 +38,9 @@ export default function CountUp({ end, prefix = '', suffix = '', duration = 2 }:
 
   return (
     <span ref={ref}>
-      {prefix}{count}{suffix}
+      {prefix && <span className="text-[0.6em] text-accent-gold/70 font-sans">{prefix}</span>}
+      {count}
+      {suffix && <span className="text-[0.6em] text-accent-gold/70 font-sans">{suffix}</span>}
     </span>
   );
 }

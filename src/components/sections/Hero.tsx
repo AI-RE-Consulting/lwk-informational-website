@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import SectionLabel from '../ui/SectionLabel';
 import Button from '../ui/Button';
+import { EXTERNAL_URLS } from '@/lib/constants';
 
 export default function Hero() {
   return (
@@ -20,7 +21,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-r from-navy-900 via-navy-900/85 to-navy-900/20" />
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
+      <div className="relative z-10 section-container w-full">
         <div className="max-w-2xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -45,7 +46,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.6 }}
-            className="text-white/60 text-lg mt-6 leading-relaxed max-w-lg"
+            className="text-white/70 text-lg mt-6 leading-relaxed max-w-lg"
           >
             Targeting undermanaged assets with multiple levers to create value through operational improvements, renovations, and new unit development.
           </motion.p>
@@ -54,10 +55,13 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
-            className="mt-8"
+            className="flex flex-wrap gap-4 mt-8"
           >
             <Button href="#about" variant="outlineLight">
-              Learn More
+              Explore Our Strategy
+            </Button>
+            <Button href={EXTERNAL_URLS.investorPortal} variant="primary" target="_blank" rel="noopener noreferrer">
+              Investor Portal
             </Button>
           </motion.div>
         </div>

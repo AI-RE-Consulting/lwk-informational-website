@@ -35,7 +35,7 @@ export default function MobileMenu({ onClose }: MobileMenuProps) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 + i * 0.07 }}
-            className="text-white text-lg font-semibold tracking-[0.2em] hover:text-accent-gold transition-colors"
+            className="text-white text-lg font-semibold tracking-[0.15em] hover:text-accent-gold transition-colors"
           >
             {link.label}
           </motion.a>
