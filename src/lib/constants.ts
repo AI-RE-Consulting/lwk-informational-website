@@ -18,6 +18,6 @@ export const SECTION_IDS = {
 } as const;
 
 export const EXTERNAL_URLS = {
-  investorPortal: 'https://lwkpartners.investorportal.co',
-  linkedin: 'https://www.linkedin.com/company/lwk-partners/',
+  investorPortal: 'https://lwrep.portal.agorareal.com/#/login?redirectUrl=%2F',
+  linkedin: 'https://www.linkedin.com/company/lwkpartners/',
 } as const;

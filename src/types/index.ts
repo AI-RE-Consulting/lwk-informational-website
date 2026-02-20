@@ -25,6 +25,8 @@ export interface PressArticle {
 export interface Partner {
   name: string;
   logoText: string;
+  logoSrc?: string;
+  logoClassName?: string;
   url?: string;
 }
 
