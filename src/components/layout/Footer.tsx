@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-start gap-10">
           {/* Left: Logo + tagline */}
           <div>
-            <span className="text-white font-serif text-2xl font-bold tracking-[0.15em]">LWK</span>
+            <img src="/images/LWK Logo.jpg" alt="LWK Partners" className="h-10 w-auto" />
             <p className="text-white/60 text-sm mt-3 max-w-xs leading-relaxed">
               Real estate private equity focused on value-add multifamily in Southern California.
             </p>

@@ -12,19 +12,31 @@ export default function Partners() {
     <section id="partners" className="section-padding bg-white">
       <div className="section-container">
         <FadeInUp className="mb-12">
-          <SectionHeading label="Our Partners" title="Partners" centered />
+          <SectionHeading label="Our Partners" title="Our Institutional Partners" centered />
           <p className="text-gray-600 text-center mt-4 text-base">Trusted capital and operating partners.</p>
         </FadeInUp>
 
-        <StaggerChildren className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-6">
+        <StaggerChildren className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 lg:gap-6">
           {partners.map((partner) => (
             <motion.div
               key={partner.name}
               variants={staggerItem}
-              className="group flex items-center justify-center border border-gray-200 px-8 py-5 hover:border-accent-gold/40 hover:shadow-sm transition-all duration-300"
+              className="group flex items-center justify-center border border-gray-200 px-8 py-5 hover:border-accent-gold/40 hover:shadow-sm transition-all duration-300 min-h-[80px]"
               title={partner.name}
             >
-              <span className="text-navy-800 font-serif text-base text-center group-hover:text-accent-gold transition-colors duration-300">
+              {partner.logoSrc ? (
+                <img
+                  src={partner.logoSrc}
+                  alt={partner.name}
+                  className={`${partner.logoClassName || 'max-h-10'} w-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-300`}
+                  onError={(e) => {
+                    const target = e.currentTarget;
+                    target.style.display = 'none';
+                    target.nextElementSibling?.classList.remove('hidden');
+                  }}
+                />
+              ) : null}
+              <span className={`text-navy-800 font-serif text-base text-center group-hover:text-accent-gold transition-colors duration-300${partner.logoSrc ? ' hidden' : ''}`}>
                 {partner.logoText}
               </span>
             </motion.div>

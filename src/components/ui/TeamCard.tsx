@@ -60,7 +60,7 @@ export default function TeamCard({ member }: TeamCardProps) {
       <motion.div
         initial={false}
         animate={{ height: expanded ? 'auto' : 0, opacity: expanded ? 1 : 0 }}
-        transition={{ duration: 0.3, ease: 'easeInOut' }}
+        transition={{ duration: 0.4, ease: 'easeInOut' }}
         className="overflow-hidden"
       >
         <p className="text-gray-600 text-sm leading-relaxed mt-4 pt-4 border-t border-gray-100">
