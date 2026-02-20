@@ -18,7 +18,7 @@ export default function PressCard({ article, index }: PressCardProps) {
       whileInView={{ opacity: 1, x: 0, y: 0 }}
       viewport={{ once: true, margin: '-60px' }}
       transition={{ duration: 0.7, delay: index * 0.1, ease: [0.25, 0.1, 0.25, 1] }}
-      className="group flex-shrink-0 w-[340px] md:w-[380px] bg-navy-700/50 border border-white/10 rounded-sm p-8 hover:bg-navy-700/80 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 block"
+      className="group flex-shrink-0 w-[340px] md:w-[380px] bg-navy-700/50 border border-white/10 rounded-sm p-8 hover:bg-navy-700/80 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 block snap-start"
     >
       <p className="text-accent-gold/70 text-xs tracking-[0.15em] uppercase">{article.date}</p>
       <h3 className="font-serif text-lg text-white mt-3 leading-snug group-hover:text-accent-gold/90 transition-colors">
