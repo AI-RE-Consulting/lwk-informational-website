@@ -1,4 +1,4 @@
-import { NAV_LINKS, EXTERNAL_URLS } from '@/lib/constants';
+import { EXTERNAL_URLS } from '@/lib/constants';
 
 export default function Footer() {
   return (
@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-start gap-10">
           {/* Left: Logo + tagline */}
           <div>
-            <img src="/images/LWK Logo.jpg" alt="LWK Partners" className="h-10 w-auto" />
+            <span className="text-white font-serif text-2xl font-bold tracking-[0.15em]">LWK Partners</span>
             <p className="text-white/60 text-sm mt-3 max-w-xs leading-relaxed">
               Real estate private equity focused on value-add multifamily in Southern California.
             </p>
@@ -24,18 +24,6 @@ export default function Footer() {
             </a>
           </div>
 
-          {/* Right: Quick links */}
-          <nav className="flex flex-wrap gap-x-8 gap-y-3">
-            {NAV_LINKS.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-white/70 text-xs font-medium tracking-[0.15em] uppercase hover:text-white transition-colors"
-              >
-                {link.label}
-              </a>
-            ))}
-          </nav>
         </div>
 
         <div className="mt-12 pt-8 border-t border-white/5">

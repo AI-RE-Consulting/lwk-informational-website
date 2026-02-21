@@ -42,14 +42,13 @@ export default function Press() {
         <div
           ref={scrollRef}
           onScroll={updateScrollState}
-          className="overflow-x-auto scrollbar-hide snap-x snap-mandatory"
+          className="overflow-x-auto scrollbar-hide snap-x snap-mandatory scroll-pl-8 lg:scroll-pl-12"
         >
-          <div className="flex gap-6 pb-4 pl-6 lg:pl-[max(2rem,calc((100vw-80rem)/2+2rem))] pr-0">
+          <div className="flex gap-6 pb-4 w-max mx-auto px-8 lg:px-12">
             {pressArticles.map((article, i) => (
               <PressCard key={article.headline} article={article} index={i} />
             ))}
-            {/* Spacer so last card peeks from edge */}
-            <div className="flex-shrink-0 w-4" aria-hidden="true" />
+
           </div>
         </div>
 

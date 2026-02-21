@@ -6,7 +6,6 @@ import About from '@/components/sections/About';
 import Team from '@/components/sections/Team';
 import Partners from '@/components/sections/Partners';
 import Press from '@/components/sections/Press';
-import ClosingCTA from '@/components/sections/ClosingCTA';
 
 export default function Home() {
   return (
@@ -19,7 +18,6 @@ export default function Home() {
         <Team />
         <Partners />
         <Press />
-        <ClosingCTA />
       </main>
       <Footer />
     </>
