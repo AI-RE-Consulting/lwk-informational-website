@@ -19,7 +19,12 @@ export default function Press() {
   }, []);
 
   useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
     updateScrollState();
+    const ro = new ResizeObserver(() => updateScrollState());
+    ro.observe(el);
+    return () => ro.disconnect();
   }, [updateScrollState]);
 
   const scroll = (direction: 'left' | 'right') => {
