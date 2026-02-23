@@ -1,0 +1,172 @@
+{
+  "metadata": {
+    "title": "LWK Partners | Real Estate Private Equity",
+    "description": "LWK Partners is a real estate private equity firm focused on value-add multifamily assets in Southern California.",
+    "ogTitle": "LWK Partners | Real Estate Private Equity",
+    "ogDescription": "Value-add multifamily investment in Southern California."
+  },
+
+  "header": {
+    "logoText": "LWK Partners",
+    "investorPortalButton": "INVESTOR PORTAL"
+  },
+
+  "navigation": [
+    { "label": "ABOUT", "href": "#about" },
+    { "label": "TRACK RECORD", "href": "#stats" },
+    { "label": "TEAM", "href": "#team" },
+    { "label": "PARTNERS", "href": "#partners" },
+    { "label": "PRESS", "href": "#press" }
+  ],
+
+  "hero": {
+    "label": "Real Estate Private Equity",
+    "headingLine1": "Value-Add Multifamily",
+    "headingLine2": "In Southern California",
+    "description": "Targeting undermanaged assets with multiple levers to create value through operational improvements, renovations, and new unit development.",
+    "exploreButton": "Explore Our Strategy",
+    "portalButton": "Investor Portal"
+  },
+
+  "stats": {
+    "items": [
+      { "value": 150, "prefix": "$", "suffix": "M+", "label": "GAV" },
+      { "value": 34, "suffix": "", "label": "Buildings" },
+      { "value": 450, "suffix": "+", "label": "Units Acquired" },
+      { "value": 165, "suffix": "+", "label": "Units in Development" }
+    ],
+    "footnote": "*As of Q1 2026"
+  },
+
+  "about": {
+    "label": "About LWK",
+    "title": "Focused on Value Creation in Los Angeles Multifamily",
+    "description": "LWK Partners (\"LWK\") is a real estate private equity firm focused on the acquisition and operation of value-add multifamily assets in Southern California, with a concentration in Los Angeles. Our approach targets undermanaged assets with multiple levers to create value through operational improvements, value-add renovations, and opportunities to add density via new unit development. We prioritize situations where new unit development economics allow us to deliver naturally occurring affordable housing in supply constrained communities.",
+    "focusAreas": [
+      {
+        "title": "Operational Improvements",
+        "description": "Implementing professional management and optimizing operations to increase NOI across acquired assets."
+      },
+      {
+        "title": "Value-Add Renovations",
+        "description": "Strategic unit and common area renovations that drive rent growth while maintaining workforce affordability."
+      },
+      {
+        "title": "New Unit Development",
+        "description": "Adding density through ADU construction and unit conversions to maximize property value and housing supply."
+      }
+    ]
+  },
+
+  "team": {
+    "label": "Our Team",
+    "title": "Leadership",
+    "divisions": {
+      "acquisitions": "Acquisitions",
+      "assetManagement": "Asset Management"
+    },
+    "members": [
+      {
+        "name": "Austin Nissly",
+        "title": "Co-Founder, Partner",
+        "division": "Acquisitions",
+        "bio": "Austin is a Co-Founder & Partner of LWK, and co-leads sourcing, acquisitions, and capital raising. He founded Keystone Investors and Penguin Property Management, growing them to $50 million in assets under management and 175 units. Austin raised $20 million from 160 investors, acquired and repositioned 18 multifamily assets, and managed $4 million in construction for extensive renovations and capital improvements. His early career included flipping cars and acquiring small properties in Pittsburgh before earning a summa cum laude degree from Boston College. He worked in real estate investment banking at Citi and spent time at CIM Group in Los Angeles focusing on acquisitions and asset management. Austin resides in Santa Monica with two children and enjoys surfing, soccer, rock climbing, and mountain biking.",
+        "email": "anissly@lwkpartners.com",
+        "linkedin": "https://www.linkedin.com/in/austin-nissly-793aa331/"
+      },
+      {
+        "name": "Matt Carney",
+        "title": "Co-Founder, Partner",
+        "division": "Acquisitions",
+        "bio": "Matt is a Co-Founder & Partner of LWK, co-leading the firm's acquisitions, strategic partnerships and capital relationships. He brings over 10 years of real estate private equity, corporate private equity, and investment banking experience. Previously, Matt was Director of Acquisitions at a Chicago-based family office managing approximately $500 million in real estate assets, where he established the LA office and developed the firm's net lease industrial strategy. Before that, he served as Private Equity Associate at Ares Management, evaluating acquisitions and special situations across industries while serving as Board Observer for portfolio companies including CHG Healthcare and Jacuzzi Brands. Matt began his career in the Mergers & Acquisitions Group at Bank of America Merrill Lynch and graduated with honors from the University of Pennsylvania.",
+        "email": "mcarney@lwkpartners.com",
+        "linkedin": "https://www.linkedin.com/in/matt-carney-48210a73/"
+      },
+      {
+        "name": "Andrew Altman",
+        "title": "Co-Founder, Partner",
+        "division": "Asset Management",
+        "bio": "Andrew is a Co-Founder & Partner of LWK, spearheading day-to-day operations and fostering new partnerships with investors, brokers and vendors. He is a 20+ year commercial real estate executive with expertise across value-add development, leasing, and property management. Recently, Andrew managed a 500,000 square foot mixed-collateral portfolio in prime West Los Angeles for the Ruth Group. Previously at CIM Group from 2010 to 2020, he led West Coast asset management and leasing for a portfolio exceeding 25 million square feet across multiple states. He started his career at Cushman & Wakefield and graduated from the University of Pennsylvania.",
+        "email": "andrew@lwrep.co",
+        "linkedin": "https://www.linkedin.com/in/andrew-altman-8193449/"
+      },
+      {
+        "name": "Matt Osborn",
+        "title": "Co-Founder, Partner",
+        "division": "Asset Management",
+        "bio": "Matt is a Co-Founder & Partner of LWK, leading day-to-day operations and implementing institutional best-practices across our portfolio. He brings 20+ years of experience in executive leadership, operations, restructuring, and capital markets brokerage, with transaction experience involving over seven million square feet and $2.5+ billion in consideration. Before co-founding LWK, Matt served as Senior West Coast Executive for WeWork, directing restructuring and leasing for a 5 million square foot California and Las Vegas portfolio. He also worked as Managing Director at CBRE and with JLL's Capital Markets group. Matt earned his B.S. in Business Administration with a Finance emphasis from the University of Colorado at Boulder.",
+        "email": "matt@lwrep.co",
+        "linkedin": "https://www.linkedin.com/in/mattosborn/"
+      }
+    ]
+  },
+
+  "partners": {
+    "label": "Our Partners",
+    "title": "Our Institutional Partners",
+    "description": "Trusted capital and operating partners.",
+    "items": [
+      { "name": "Green Development Company", "logoText": "GREEN DEV", "logoSrc": "/images/partners/greendev.png", "logoClassName": "max-h-24" },
+      { "name": "Sabal Investment Holdings", "logoText": "SABAL", "logoSrc": "/images/partners/sabal.png" },
+      { "name": "Cypress Equity Investments", "logoText": "CYPRESS", "logoSrc": "/images/partners/cypress.png" },
+      { "name": "Ascent Developer Solutions", "logoText": "ASCENT", "logoSrc": "/images/partners/ascent.png" },
+      { "name": "The Pappas Group", "logoText": "PAPPAS GROUP", "logoSrc": "/images/partners/papasgroup.png" },
+      { "name": "NPS Management", "logoText": "NPS", "logoSrc": "/images/partners/nps.svg" }
+    ]
+  },
+
+  "press": {
+    "label": "In The News",
+    "title": "Press",
+    "articles": [
+      {
+        "headline": "LWK Partners, Cypress, Sabal Acquire L.A. Workforce Housing Portfolio for $30M",
+        "date": "January 7th, 2026",
+        "excerpt": "The new joint venture has plans to add workforce housing density across the Los Angeles region",
+        "url": "https://commercialobserver.com/2026/01/lwk-partners-cypress-sabal-workforce-housing-la/"
+      },
+      {
+        "headline": "LWK, Cypress secure $100M debt for multifamily ADU strategy",
+        "date": "November 11, 2025",
+        "excerpt": "LWK Partners and Cypress Equity Investments plan to increase the density of multifamily properties they own in Los Angeles after securing a $100 million credit facility.",
+        "url": "https://therealdeal.com/la/2025/11/11/lwk-partners-cypress-multifamily-secure-debt-for-adu-strategy/"
+      },
+      {
+        "headline": "LWK, Cypress Equity Nab $100 Million Credit Facility",
+        "date": "November 10, 2025",
+        "excerpt": "LWK Partners and Cypress Equity Investments land a $100 million credit facility from Ascent Developer Solutions to support their joint venture.",
+        "url": "https://labusinessjournal.com/special-reports/infrastructure-l-a-metro-bus-rapid-transit/"
+      },
+      {
+        "headline": "Cypress Equity Investments and LWK Partners Secure $100mm Custom Credit Facility from Ascent Developer Solutions to Accelerate Workforce Housing Density Addition Strategy",
+        "date": "October 27th, 2025",
+        "excerpt": "Cypress Equity Investments and LWK Partners secured a $100mm bespoke credit facility from Ascent Developer Solutions to accelerate their Workforce Housing Density Addition strategy.",
+        "url": "https://www.businesswire.com/news/home/20251024217280/en/Cypress-Equity-Investments-and-LWK-Partners-Secure-%24100mm-Custom-Credit-Facility-from-Ascent-Developer-Solutions-to-Accelerate-Workforce-Housing-Density-Addition-Strategy"
+      },
+      {
+        "headline": "Cypress Equity Investments and LWK Partners Form Joint Venture to Pursue Workforce Housing Density Addition Strategy",
+        "date": "January 27th, 2025",
+        "excerpt": "CEI and LWK Partnership Combines Development and Acquisitions Expertise to Add Density to Multifamily Assets",
+        "url": "https://www.businesswire.com/news/home/20250127630424/en/Cypress-Equity-Investments-and-LWK-Form-Joint-Venture-to-Pursue-Workforce-Housing-Density-Addition-Strategy"
+      }
+    ]
+  },
+
+  "closingCta": {
+    "heading": "Ready to Learn More About LWK Partners?",
+    "description": "Connect with our team to explore investment opportunities in Southern California multifamily real estate.",
+    "portalButton": "Investor Portal",
+    "linkedinButton": "LinkedIn"
+  },
+
+  "footer": {
+    "logoText": "LWK Partners",
+    "tagline": "Real estate private equity focused on value-add multifamily in Southern California.",
+    "copyright": "LWK Partners. All rights reserved."
+  },
+
+  "externalUrls": {
+    "investorPortal": "https://lwrep.portal.agorareal.com/#/login?redirectUrl=%2F",
+    "linkedin": "https://www.linkedin.com/company/lwkpartners/"
+  }
+}

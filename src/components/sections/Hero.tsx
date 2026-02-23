@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import SectionLabel from '../ui/SectionLabel';
 import Button from '../ui/Button';
 import { EXTERNAL_URLS } from '@/lib/constants';
+import { hero } from '@/lib/content';
 
 export default function Hero() {
   return (
@@ -28,7 +29,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <SectionLabel light>Real Estate Private Equity</SectionLabel>
+            <SectionLabel light>{hero.label}</SectionLabel>
           </motion.div>
 
           <motion.h1
@@ -37,9 +38,9 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.4 }}
             className="font-serif text-4xl sm:text-5xl lg:text-6xl text-white mt-5 leading-tight"
           >
-            Value-Add Multifamily
+            {hero.headingLine1}
             <br />
-            In Southern California
+            {hero.headingLine2}
           </motion.h1>
 
           <motion.p
@@ -48,7 +49,7 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.6 }}
             className="text-white/70 text-lg mt-6 leading-relaxed max-w-lg"
           >
-            Targeting undermanaged assets with multiple levers to create value through operational improvements, renovations, and new unit development.
+            {hero.description}
           </motion.p>
 
           <motion.div
@@ -58,10 +59,10 @@ export default function Hero() {
             className="flex flex-wrap gap-4 mt-8"
           >
             <Button href="#about" variant="outlineLight">
-              Explore Our Strategy
+              {hero.exploreButton}
             </Button>
             <Button href={EXTERNAL_URLS.investorPortal} variant="primary" target="_blank" rel="noopener noreferrer">
-              Investor Portal
+              {hero.portalButton}
             </Button>
           </motion.div>
         </div>

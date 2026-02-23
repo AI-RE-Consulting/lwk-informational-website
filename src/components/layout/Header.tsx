@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { NAV_LINKS, EXTERNAL_URLS } from '@/lib/constants';
+import { header } from '@/lib/content';
 import MobileMenu from './MobileMenu';
 
 export default function Header() {
@@ -55,7 +56,7 @@ export default function Header() {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <a href="#" className="flex-shrink-0">
-              <span className="text-white font-serif text-2xl font-bold tracking-[0.15em]">LWK Partners</span>
+              <span className="text-white font-serif text-2xl font-bold tracking-[0.15em]">{header.logoText}</span>
             </a>
 
             {/* Desktop Nav */}
@@ -86,7 +87,7 @@ export default function Header() {
                 rel="noopener noreferrer"
                 className="ml-4 px-5 py-2 bg-accent-gold text-white border border-accent-gold text-xs font-semibold tracking-[0.15em] hover:bg-accent-gold/85 transition-all duration-300"
               >
-                INVESTOR PORTAL
+                {header.investorPortalButton}
               </a>
             </nav>
 

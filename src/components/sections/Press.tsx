@@ -2,6 +2,7 @@
 
 import { useRef, useState, useEffect, useCallback } from 'react';
 import { pressArticles } from '@/lib/data';
+import { pressSection } from '@/lib/content';
 import SectionHeading from '../ui/SectionHeading';
 import PressCard from '../ui/PressCard';
 import FadeInUp from '../animations/FadeInUp';
@@ -38,7 +39,7 @@ export default function Press() {
     <section id="press" className="section-padding bg-navy-900">
       <div className="section-container">
         <FadeInUp className="mb-14">
-          <SectionHeading label="In The News" title="Press" light />
+          <SectionHeading label={pressSection.label} title={pressSection.title} light />
         </FadeInUp>
       </div>
 

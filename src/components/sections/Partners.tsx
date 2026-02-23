@@ -1,6 +1,7 @@
 'use client';
 
 import { partners } from '@/lib/data';
+import { partnersSection } from '@/lib/content';
 import SectionHeading from '../ui/SectionHeading';
 import FadeInUp from '../animations/FadeInUp';
 import StaggerChildren from '../animations/StaggerChildren';
@@ -12,8 +13,8 @@ export default function Partners() {
     <section id="partners" className="section-padding bg-white">
       <div className="section-container">
         <FadeInUp className="mb-12">
-          <SectionHeading label="Our Partners" title="Our Institutional Partners" centered />
-          <p className="text-gray-600 text-center mt-4 text-base">Trusted capital and operating partners.</p>
+          <SectionHeading label={partnersSection.label} title={partnersSection.title} centered />
+          <p className="text-gray-600 text-center mt-4 text-base">{partnersSection.description}</p>
         </FadeInUp>
 
         <StaggerChildren className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 lg:gap-6">

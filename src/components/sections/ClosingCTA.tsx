@@ -1,6 +1,7 @@
 import Button from '../ui/Button';
 import FadeInUp from '../animations/FadeInUp';
 import { EXTERNAL_URLS } from '@/lib/constants';
+import { closingCta } from '@/lib/content';
 
 export default function ClosingCTA() {
   return (
@@ -8,17 +9,17 @@ export default function ClosingCTA() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
         <FadeInUp>
           <h2 className="font-serif text-3xl sm:text-4xl text-white">
-            Ready to Learn More About LWK Partners?
+            {closingCta.heading}
           </h2>
           <p className="text-white/70 mt-4 max-w-lg mx-auto leading-relaxed">
-            Connect with our team to explore investment opportunities in Southern California multifamily real estate.
+            {closingCta.description}
           </p>
           <div className="flex flex-wrap justify-center gap-4 mt-8">
             <Button href={EXTERNAL_URLS.investorPortal} variant="primary" target="_blank" rel="noopener noreferrer">
-              Investor Portal
+              {closingCta.portalButton}
             </Button>
             <Button href={EXTERNAL_URLS.linkedin} variant="outline" target="_blank" rel="noopener noreferrer">
-              LinkedIn
+              {closingCta.linkedinButton}
             </Button>
           </div>
         </FadeInUp>

@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { NAV_LINKS, EXTERNAL_URLS } from '@/lib/constants';
+import { header } from '@/lib/content';
 
 interface MobileMenuProps {
   onClose: () => void;
@@ -49,7 +50,7 @@ export default function MobileMenu({ onClose }: MobileMenuProps) {
           transition={{ delay: 0.5 }}
           className="mt-4 px-8 py-3 border border-accent-gold text-accent-gold text-sm font-semibold tracking-[0.15em] hover:bg-accent-gold hover:text-white transition-all duration-300"
         >
-          INVESTOR PORTAL
+          {header.investorPortalButton}
         </motion.a>
       </nav>
     </motion.div>

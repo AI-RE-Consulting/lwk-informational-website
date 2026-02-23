@@ -1,6 +1,7 @@
 'use client';
 
 import { teamMembers } from '@/lib/data';
+import { teamSection } from '@/lib/content';
 import SectionHeading from '../ui/SectionHeading';
 import TeamCard from '../ui/TeamCard';
 import StaggerChildren from '../animations/StaggerChildren';
@@ -14,14 +15,14 @@ export default function Team() {
     <section id="team" className="section-padding bg-gray-50">
       <div className="section-container">
         <FadeInUp className="mb-16">
-          <SectionHeading label="Our Team" title="Leadership" centered />
+          <SectionHeading label={teamSection.label} title={teamSection.title} centered />
         </FadeInUp>
 
         {/* Acquisitions */}
         <div className="mb-14">
           <FadeInUp>
             <h3 className="text-center text-xs font-semibold tracking-[0.15em] text-gray-600 uppercase mb-8">
-              Acquisitions
+              {teamSection.divisions.acquisitions}
             </h3>
           </FadeInUp>
           <StaggerChildren className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
@@ -35,7 +36,7 @@ export default function Team() {
         <div>
           <FadeInUp>
             <h3 className="text-center text-xs font-semibold tracking-[0.15em] text-gray-600 uppercase mb-8">
-              Asset Management
+              {teamSection.divisions.assetManagement}
             </h3>
           </FadeInUp>
           <StaggerChildren className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">

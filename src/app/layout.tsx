@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
+import { metadata as siteMetadata } from "@/lib/content";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -15,13 +16,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "LWK Partners | Real Estate Private Equity",
-  description:
-    "LWK Partners is a real estate private equity firm focused on value-add multifamily assets in Southern California.",
+  title: siteMetadata.title,
+  description: siteMetadata.description,
   openGraph: {
-    title: "LWK Partners | Real Estate Private Equity",
-    description:
-      "Value-add multifamily investment in Southern California.",
+    title: siteMetadata.ogTitle,
+    description: siteMetadata.ogDescription,
     type: "website",
     locale: "en_US",
   },

@@ -1,6 +1,7 @@
 'use client';
 
 import { stats } from '@/lib/data';
+import { statsFootnote } from '@/lib/content';
 import CountUp from '../ui/CountUp';
 import FadeInUp from '../animations/FadeInUp';
 
@@ -20,7 +21,7 @@ export default function Stats() {
             ))}
           </dl>
         </FadeInUp>
-        <p className="text-white/40 text-xs mt-10 tracking-[0.15em]">*As of Q1 2026</p>
+        <p className="text-white/40 text-xs mt-10 tracking-[0.15em]">{statsFootnote}</p>
       </div>
     </section>
   );

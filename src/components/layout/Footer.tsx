@@ -1,4 +1,5 @@
 import { EXTERNAL_URLS } from '@/lib/constants';
+import { footer } from '@/lib/content';
 
 export default function Footer() {
   return (
@@ -7,9 +8,9 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-start gap-10">
           {/* Left: Logo + tagline */}
           <div>
-            <span className="text-white font-serif text-2xl font-bold tracking-[0.15em]">LWK Partners</span>
+            <span className="text-white font-serif text-2xl font-bold tracking-[0.15em]">{footer.logoText}</span>
             <p className="text-white/60 text-sm mt-3 max-w-xs leading-relaxed">
-              Real estate private equity focused on value-add multifamily in Southern California.
+              {footer.tagline}
             </p>
             <a
               href={EXTERNAL_URLS.linkedin}
@@ -28,7 +29,7 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-white/5">
           <p className="text-white/40 text-xs tracking-[0.15em]">
-            &copy; {new Date().getFullYear()} LWK Partners. All rights reserved.
+            &copy; {new Date().getFullYear()} {footer.copyright}
           </p>
         </div>
       </div>

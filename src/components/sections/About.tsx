@@ -1,6 +1,7 @@
 'use client';
 
 import { aboutDescription, focusAreas } from '@/lib/data';
+import { aboutSection } from '@/lib/content';
 import SectionHeading from '../ui/SectionHeading';
 import FadeInLeft from '../animations/FadeInLeft';
 import FadeInRight from '../animations/FadeInRight';
@@ -13,7 +14,7 @@ export default function About() {
         <div className="grid lg:grid-cols-[55%_45%] gap-12 lg:gap-16 items-start">
           {/* Left: Text */}
           <FadeInLeft>
-            <SectionHeading label="About LWK" title="Focused on Value Creation in Los Angeles Multifamily" />
+            <SectionHeading label={aboutSection.label} title={aboutSection.title} />
             <p className="text-gray-600 leading-relaxed mt-6">{aboutDescription}</p>
 
             <ul role="list" className="mt-10 space-y-6">
