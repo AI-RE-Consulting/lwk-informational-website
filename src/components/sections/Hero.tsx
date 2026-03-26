@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import SectionLabel from '../ui/SectionLabel';
 import Button from '../ui/Button';
 import { EXTERNAL_URLS } from '@/lib/constants';
 import { hero } from '@/lib/content';
@@ -24,14 +23,6 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 section-container w-full">
         <div className="max-w-2xl">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            <SectionLabel light>{hero.label}</SectionLabel>
-          </motion.div>
-
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}

@@ -55,8 +55,9 @@ export default function Header() {
         <div className="section-container">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <a href="#" className="flex-shrink-0">
-              <span className="text-white font-serif text-2xl font-bold tracking-[0.15em]">{header.logoText}</span>
+            <a href="#" className="flex-shrink-0 flex flex-col items-start leading-none">
+              <span className="text-white font-serif text-2xl font-bold tracking-[0.15em]">{header.logoLine1}</span>
+              <span className="text-white font-serif text-[0.6rem] font-semibold tracking-[0.35em] mt-0.5">{header.logoLine2}</span>
             </a>
 
             {/* Desktop Nav */}

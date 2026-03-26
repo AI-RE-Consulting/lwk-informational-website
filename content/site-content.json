@@ -7,7 +7,8 @@
   },
 
   "header": {
-    "logoText": "LWK Partners",
+    "logoLine1": "LWK",
+    "logoLine2": "PARTNERS",
     "investorPortalButton": "INVESTOR PORTAL"
   },
 
@@ -20,7 +21,6 @@
   ],
 
   "hero": {
-    "label": "Real Estate Private Equity",
     "headingLine1": "Value-Add Multifamily",
     "headingLine2": "In Southern California",
     "description": "Targeting undermanaged assets with multiple levers to create value through operational improvements, renovations, and new unit development.",
@@ -120,11 +120,18 @@
     "title": "Press",
     "articles": [
       {
+        "headline": "LWK Partners Announces Joint Venture with CurbStand to Deliver Proactive Parking Solutions Across Los Angeles Workforce Housing Portfolio",
+        "date": "March 17th, 2026",
+        "excerpt": "LWK Partners and CurbStand form joint venture to deliver parking solutions for residents across LWK's growing Los Angeles workforce housing portfolio.",
+        "url": "https://www.prnewswire.com/news-releases/lwk-partners-announces-joint-venture-with-curbstand-to-deliver-proactive-parking-solutions-across-los-angeles-workforce-housing-portfolio-302715922.html"
+      },
+      {
         "headline": "LWK Partners, Cypress, Sabal Acquire L.A. Workforce Housing Portfolio for $30M",
         "date": "January 7th, 2026",
         "excerpt": "The new joint venture has plans to add workforce housing density across the Los Angeles region",
         "url": "https://commercialobserver.com/2026/01/lwk-partners-cypress-sabal-workforce-housing-la/"
       },
+    
       {
         "headline": "LWK, Cypress secure $100M debt for multifamily ADU strategy",
         "date": "November 11, 2025",
@@ -160,7 +167,8 @@
   },
 
   "footer": {
-    "logoText": "LWK Partners",
+    "logoLine1": "LWK",
+    "logoLine2": "PARTNERS",
     "tagline": "Real estate private equity focused on value-add multifamily in Southern California.",
     "copyright": "LWK Partners. All rights reserved."
   },

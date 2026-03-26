@@ -8,7 +8,10 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-start gap-10">
           {/* Left: Logo + tagline */}
           <div>
-            <span className="text-white font-serif text-2xl font-bold tracking-[0.15em]">{footer.logoText}</span>
+            <div className="flex flex-col items-start leading-none">
+              <span className="text-white font-serif text-2xl font-bold tracking-[0.15em]">{footer.logoLine1}</span>
+              <span className="text-white font-serif text-[0.6rem] font-semibold tracking-[0.35em] mt-0.5">{footer.logoLine2}</span>
+            </div>
             <p className="text-white/60 text-sm mt-3 max-w-xs leading-relaxed">
               {footer.tagline}
             </p>

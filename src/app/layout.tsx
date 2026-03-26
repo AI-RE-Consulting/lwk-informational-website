@@ -18,11 +18,16 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: siteMetadata.title,
   description: siteMetadata.description,
+  icons: {
+    icon: "/images/LWK Logo.jpg",
+    apple: "/images/LWK Logo.jpg",
+  },
   openGraph: {
     title: siteMetadata.ogTitle,
     description: siteMetadata.ogDescription,
     type: "website",
     locale: "en_US",
+    images: ["/images/LWK Logo.jpg"],
   },
 };
 
