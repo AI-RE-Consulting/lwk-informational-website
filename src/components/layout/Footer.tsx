@@ -10,7 +10,7 @@ export default function Footer() {
           <div>
             <div className="flex flex-col items-start leading-none">
               <span className="text-white font-serif text-2xl font-bold tracking-[0.15em]">{footer.logoLine1}</span>
-              <span className="block w-full text-white font-serif text-[0.6rem] font-semibold mt-0.5 text-justify [text-align-last:justify]">{footer.logoLine2}</span>
+              <span className="flex w-full justify-between text-white font-serif text-[0.6rem] font-semibold mt-0.5">{footer.logoLine2.split('').map((ch: string, i: number) => <span key={i}>{ch}</span>)}</span>
             </div>
             <p className="text-white/60 text-sm mt-3 max-w-xs leading-relaxed">
               {footer.tagline}
