@@ -8,9 +8,8 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-start gap-10">
           {/* Left: Logo + tagline */}
           <div>
-            <div className="flex flex-col leading-none w-[3.6rem]">
-              <span className="flex justify-between text-white font-serif text-2xl font-bold">{footer.logoLine1.split('').map((ch: string, i: number) => <span key={i}>{ch}</span>)}</span>
-              <span className="flex justify-between text-white font-serif text-[0.6rem] font-semibold mt-0.5">{footer.logoLine2.split('').map((ch: string, i: number) => <span key={i}>{ch}</span>)}</span>
+            <div className="w-[3.6rem] text-white">
+              <img src="/images/lwk-logo.svg" alt="LWK Partners" className="w-full h-auto" />
             </div>
             <p className="text-white/60 text-sm mt-3 max-w-xs leading-relaxed">
               {footer.tagline}

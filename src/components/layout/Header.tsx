@@ -55,9 +55,8 @@ export default function Header() {
         <div className="section-container">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <a href="#" className="flex-shrink-0 flex flex-col leading-none w-[3.6rem]">
-              <span className="flex justify-between text-white font-serif text-2xl font-bold">{header.logoLine1.split('').map((ch: string, i: number) => <span key={i}>{ch}</span>)}</span>
-              <span className="flex justify-between text-white font-serif text-[0.6rem] font-semibold mt-0.5">{header.logoLine2.split('').map((ch: string, i: number) => <span key={i}>{ch}</span>)}</span>
+            <a href="#" className="flex-shrink-0 w-[3.6rem]">
+              <img src="/images/lwk-logo.svg" alt="LWK Partners" className="w-full h-auto" />
             </a>
 
             {/* Desktop Nav */}
