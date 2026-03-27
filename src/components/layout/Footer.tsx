@@ -9,7 +9,7 @@ export default function Footer() {
           {/* Left: Logo + tagline */}
           <div>
             <div className="w-[3.6rem] text-white">
-              <img src="/images/lwk-logo.svg" alt="LWK Partners" className="w-full h-auto" />
+              <img src="/images/lwk-logo.png" alt="LWK Partners" className="w-full h-auto" />
             </div>
             <p className="text-white/60 text-sm mt-3 max-w-xs leading-relaxed">
               {footer.tagline}

@@ -56,7 +56,7 @@ export default function Header() {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <a href="#" className="flex-shrink-0 w-[3.6rem]">
-              <img src="/images/lwk-logo.svg" alt="LWK Partners" className="w-full h-auto" />
+              <img src="/images/lwk-logo.png" alt="LWK Partners" className="w-full h-auto" />
             </a>
 
             {/* Desktop Nav */}
