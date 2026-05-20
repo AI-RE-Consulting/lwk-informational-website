@@ -37,6 +37,9 @@ export const pressArticles: PressArticle[] = siteContent.press.articles;
 // Closing CTA
 export const closingCta = siteContent.closingCta;
 
+// Newsletter
+export const newsletter = siteContent.newsletter;
+
 // Footer
 export const footer = siteContent.footer;
 

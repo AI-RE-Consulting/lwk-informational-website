@@ -6,9 +6,10 @@ import { header } from '@/lib/content';
 
 interface MobileMenuProps {
   onClose: () => void;
+  onOpenNewsletter: () => void;
 }
 
-export default function MobileMenu({ onClose }: MobileMenuProps) {
+export default function MobileMenu({ onClose, onOpenNewsletter }: MobileMenuProps) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -41,6 +42,16 @@ export default function MobileMenu({ onClose }: MobileMenuProps) {
             {link.label}
           </motion.a>
         ))}
+        <motion.button
+          type="button"
+          onClick={onOpenNewsletter}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 + NAV_LINKS.length * 0.07 }}
+          className="text-white text-lg font-semibold tracking-[0.15em] hover:text-accent-gold transition-colors cursor-pointer"
+        >
+          {header.newsletterButton}
+        </motion.button>
         <motion.a
           href={EXTERNAL_URLS.investorPortal}
           target="_blank"

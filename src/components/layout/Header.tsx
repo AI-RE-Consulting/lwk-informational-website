@@ -5,11 +5,18 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { NAV_LINKS, EXTERNAL_URLS } from '@/lib/constants';
 import { header } from '@/lib/content';
 import MobileMenu from './MobileMenu';
+import NewsletterModal from './NewsletterModal';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [newsletterOpen, setNewsletterOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('');
+
+  const openNewsletter = () => {
+    setMobileOpen(false);
+    setNewsletterOpen(true);
+  };
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -81,6 +88,14 @@ export default function Header() {
                   </a>
                 );
               })}
+              <button
+                type="button"
+                onClick={openNewsletter}
+                className="relative text-xs font-semibold tracking-[0.15em] text-white/80 hover:text-white transition-colors group cursor-pointer"
+              >
+                {header.newsletterButton}
+                <span className="absolute -bottom-1 left-0 h-[1.5px] bg-accent-gold transition-all duration-300 w-0 group-hover:w-full" />
+              </button>
               <a
                 href={EXTERNAL_URLS.investorPortal}
                 target="_blank"
@@ -106,7 +121,16 @@ export default function Header() {
       </motion.header>
 
       <AnimatePresence>
-        {mobileOpen && <MobileMenu onClose={() => setMobileOpen(false)} />}
+        {mobileOpen && (
+          <MobileMenu
+            onClose={() => setMobileOpen(false)}
+            onOpenNewsletter={openNewsletter}
+          />
+        )}
+      </AnimatePresence>
+
+      <AnimatePresence>
+        {newsletterOpen && <NewsletterModal onClose={() => setNewsletterOpen(false)} />}
       </AnimatePresence>
     </>
   );

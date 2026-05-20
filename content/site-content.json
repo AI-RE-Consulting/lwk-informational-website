@@ -9,7 +9,8 @@
   "header": {
     "logoLine1": "LWK",
     "logoLine2": "PARTNERS",
-    "investorPortalButton": "INVESTOR PORTAL"
+    "investorPortalButton": "INVESTOR PORTAL",
+    "newsletterButton": "NEWSLETTER"
   },
 
   "navigation": [
@@ -171,6 +172,19 @@
     "logoLine2": "PARTNERS",
     "tagline": "",
     "copyright": "LWK Partners. All rights reserved."
+  },
+
+  "newsletter": {
+    "title": "Stay Informed",
+    "description": "Subscribe for occasional updates on our investments, market insights, and firm news.",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "you@example.com",
+    "submitButton": "Subscribe",
+    "submittingButton": "Subscribing…",
+    "successFallback": "Thanks! Please check your inbox to confirm your subscription.",
+    "errorFallback": "Something went wrong. Please try again in a moment.",
+    "mailchimpUrl": "https://live.us19.list-manage.com/subscribe/post-json?u=b1ad7a9bb9a92a09327015b0a&id=b57ee8f01b&f_id=00f7fde4f0",
+    "honeypotField": "b_b1ad7a9bb9a92a09327015b0a_b57ee8f01b"
   },
 
   "externalUrls": {
