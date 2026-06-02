@@ -31,9 +31,9 @@
 
   "stats": {
     "items": [
-      { "value": 160, "prefix": "$", "suffix": "M+", "label": "GAV" },
-      { "value": 41, "suffix": "", "label": "Buildings" },
-      { "value": 525, "suffix": "+", "label": "Units Acquired" },
+      { "value": 170, "prefix": "$", "suffix": "M+", "label": "GAV Acquired" },
+      { "value": 41, "suffix": "", "label": "Buildings Acquired" },
+      { "value": 550, "suffix": "+", "label": "Units Acquired" },
       { "value": 200, "suffix": "+", "label": "Units in Development" }
     ],
     "footnote": "*As of Q2 2026"
