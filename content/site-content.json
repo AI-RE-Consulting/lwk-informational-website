@@ -175,8 +175,9 @@
   },
 
   "newsletter": {
+    "label": "Newsletter",
     "title": "Stay Informed",
-    "description": "Subscribe for occasional updates on our investments, market insights, and firm news.",
+    "description": "Subscribe for updates on our investments, market insights, and firm news.",
     "emailLabel": "Email Address",
     "emailPlaceholder": "you@example.com",
     "submitButton": "Subscribe",

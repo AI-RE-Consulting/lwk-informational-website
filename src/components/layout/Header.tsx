@@ -5,18 +5,11 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { NAV_LINKS, EXTERNAL_URLS } from '@/lib/constants';
 import { header } from '@/lib/content';
 import MobileMenu from './MobileMenu';
-import NewsletterModal from './NewsletterModal';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [newsletterOpen, setNewsletterOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('');
-
-  const openNewsletter = () => {
-    setMobileOpen(false);
-    setNewsletterOpen(true);
-  };
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -25,7 +18,7 @@ export default function Header() {
   }, []);
 
   useEffect(() => {
-    const sectionIds = NAV_LINKS.map((link) => link.href.replace('#', ''));
+    const sectionIds = [...NAV_LINKS.map((link) => link.href.replace('#', '')), 'newsletter'];
     const observers: IntersectionObserver[] = [];
 
     sectionIds.forEach((id) => {
@@ -88,14 +81,20 @@ export default function Header() {
                   </a>
                 );
               })}
-              <button
-                type="button"
-                onClick={openNewsletter}
-                className="relative text-xs font-semibold tracking-[0.15em] text-white/80 hover:text-white transition-colors group cursor-pointer"
+              <a
+                href="#newsletter"
+                aria-current={activeSection === '#newsletter' ? 'true' : undefined}
+                className={`relative text-xs font-semibold tracking-[0.15em] transition-colors group ${
+                  activeSection === '#newsletter' ? 'text-white' : 'text-white/80 hover:text-white'
+                }`}
               >
                 {header.newsletterButton}
-                <span className="absolute -bottom-1 left-0 h-[1.5px] bg-accent-gold transition-all duration-300 w-0 group-hover:w-full" />
-              </button>
+                <span
+                  className={`absolute -bottom-1 left-0 h-[1.5px] bg-accent-gold transition-all duration-300 ${
+                    activeSection === '#newsletter' ? 'w-full' : 'w-0 group-hover:w-full'
+                  }`}
+                />
+              </a>
               <a
                 href={EXTERNAL_URLS.investorPortal}
                 target="_blank"
@@ -122,15 +121,8 @@ export default function Header() {
 
       <AnimatePresence>
         {mobileOpen && (
-          <MobileMenu
-            onClose={() => setMobileOpen(false)}
-            onOpenNewsletter={openNewsletter}
-          />
+          <MobileMenu onClose={() => setMobileOpen(false)} />
         )}
-      </AnimatePresence>
-
-      <AnimatePresence>
-        {newsletterOpen && <NewsletterModal onClose={() => setNewsletterOpen(false)} />}
       </AnimatePresence>
     </>
   );

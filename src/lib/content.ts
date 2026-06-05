@@ -54,4 +54,5 @@ export const SECTION_IDS = {
   team: 'team',
   partners: 'partners',
   press: 'press',
+  newsletter: 'newsletter',
 } as const;
