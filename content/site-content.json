@@ -64,7 +64,8 @@
     "title": "Leadership",
     "divisions": {
       "acquisitions": "Acquisitions",
-      "assetManagement": "Asset Management"
+      "assetManagement": "Asset Management",
+      "propertyManagers": "Property Managers"
     },
     "members": [
       {
@@ -98,6 +99,18 @@
         "bio": "Matt is a Co-Founder & Partner of LWK, leading day-to-day operations and implementing institutional best-practices across our portfolio. He brings 20+ years of experience in executive leadership, operations, restructuring, and capital markets brokerage, with transaction experience involving over seven million square feet and $2.5+ billion in consideration. Before co-founding LWK, Matt served as Senior West Coast Executive for WeWork, directing restructuring and leasing for a 5 million square foot California and Las Vegas portfolio. He also worked as Managing Director at CBRE and with JLL's Capital Markets group. Matt earned his B.S. in Business Administration with a Finance emphasis from the University of Colorado at Boulder.",
         "email": "matt@lwrep.co",
         "linkedin": "https://www.linkedin.com/in/mattosborn/"
+      },
+      {
+        "name": "John Alden",
+        "title": "Partner, Head of Asset Management",
+        "division": "Property Managers",
+        "bio": "Bio coming soon."
+      },
+      {
+        "name": "Shadi Kashani",
+        "title": "Senior Portfolio Manager",
+        "division": "Property Managers",
+        "bio": "Bio coming soon."
       }
     ]
   },
