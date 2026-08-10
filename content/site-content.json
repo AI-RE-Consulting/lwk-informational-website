@@ -104,13 +104,15 @@
         "name": "John Alden",
         "title": "Partner, Head of Asset Management",
         "division": "Property Managers",
-        "bio": "Bio coming soon."
+        "bio": "Bio coming soon.",
+        "email": "jalden@lwkpartners.com"
       },
       {
         "name": "Shadi Kashani",
         "title": "Senior Portfolio Manager",
         "division": "Property Managers",
-        "bio": "Bio coming soon."
+        "bio": "Bio coming soon.",
+        "email": "shadi@lwrep.co"
       }
     ]
   },
