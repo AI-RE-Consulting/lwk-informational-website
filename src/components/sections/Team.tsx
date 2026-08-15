@@ -54,7 +54,11 @@ export default function Team() {
               {teamSection.divisions.propertyManagers}
             </h3>
           </FadeInUp>
-          <StaggerChildren className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+          <StaggerChildren
+            className={`grid gap-6 mx-auto ${
+              propertyManagers.length === 1 ? 'max-w-sm' : 'md:grid-cols-2 max-w-3xl'
+            }`}
+          >
             {propertyManagers.map((member) => (
               <TeamCard key={member.name} member={member} />
             ))}
