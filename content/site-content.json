@@ -33,7 +33,7 @@
     "items": [
       { "value": 200, "prefix": "$", "suffix": "M+", "label": "GAV Acquired" },
       { "value": 47, "suffix": "", "label": "Buildings Acquired" },
-      { "value": 625, "suffix": "+", "label": "Units Acquired" },
+      { "value": 650, "suffix": "+", "label": "Units Acquired" },
       { "value": 250, "suffix": "+", "label": "Units in Development" }
     ],
     "footnote": "*As of Q2 2026"
