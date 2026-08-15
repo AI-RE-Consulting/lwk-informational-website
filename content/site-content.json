@@ -64,7 +64,8 @@
     "title": "Leadership",
     "divisions": {
       "acquisitions": "Acquisitions",
-      "assetManagement": "Asset Management"
+      "assetManagement": "Asset Management",
+      "propertyManagers": "Property Managers"
     },
     "members": [
       {
@@ -98,6 +99,20 @@
         "bio": "Matt is a Co-Founder & Partner of LWK, leading day-to-day operations and implementing institutional best-practices across our portfolio. He brings 20+ years of experience in executive leadership, operations, restructuring, and capital markets brokerage, with transaction experience involving over seven million square feet and $2.5+ billion in consideration. Before co-founding LWK, Matt served as Senior West Coast Executive for WeWork, directing restructuring and leasing for a 5 million square foot California and Las Vegas portfolio. He also worked as Managing Director at CBRE and with JLL's Capital Markets group. Matt earned his B.S. in Business Administration with a Finance emphasis from the University of Colorado at Boulder.",
         "email": "matt@lwrep.co",
         "linkedin": "https://www.linkedin.com/in/mattosborn/"
+      },
+      {
+        "name": "John Alden",
+        "title": "Partner, Head of Asset Management",
+        "division": "Property Managers",
+        "bio": "John is a Partner at LWK, where he spearheads the firm's asset management capabilities. Previously, John served as Head of Brokerage at Dover Management Corporation, where he led the firm's brokerage and assisted with the asset management of 1,500 units. Prior to his role at Dover, he founded and scaled Alden Pacific Investments to a 12-person team that was successfully merged with a competitor in 2022. Before Alden Pacific Investments, John opened and scaled offices for a firm focused on sub-institutional multifamily investments throughout LA County, and he has advised on the sale and disposition of over $300 million in assets throughout his career. Before rising to executive leadership, John held various consultative sales roles in financial and healthcare software verticals. He holds a BA from the University of Minnesota and an MBA from the University of California Los Angeles.",
+        "email": "jalden@lwkpartners.com"
+      },
+      {
+        "name": "Shadi Kashani",
+        "title": "Senior Portfolio Manager",
+        "division": "Property Managers",
+        "bio": "Bio coming soon.",
+        "email": "shadi@lwrep.co"
       }
     ]
   },

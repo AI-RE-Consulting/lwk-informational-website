@@ -8,10 +8,10 @@ export interface Stat {
 export interface TeamMember {
   name: string;
   title: string;
-  division: 'Acquisitions' | 'Asset Management';
+  division: 'Acquisitions' | 'Asset Management' | 'Property Managers';
   bio: string;
-  email: string;
-  linkedin: string;
+  email?: string;
+  linkedin?: string;
 }
 
 export interface PressArticle {

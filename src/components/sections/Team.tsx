@@ -10,6 +10,7 @@ import FadeInUp from '../animations/FadeInUp';
 export default function Team() {
   const acquisitions = teamMembers.filter((m) => m.division === 'Acquisitions');
   const assetManagement = teamMembers.filter((m) => m.division === 'Asset Management');
+  const propertyManagers = teamMembers.filter((m) => m.division === 'Property Managers');
 
   return (
     <section id="team" className="section-padding bg-gray-50">
@@ -33,7 +34,7 @@ export default function Team() {
         </div>
 
         {/* Asset Management */}
-        <div>
+        <div className="mb-14">
           <FadeInUp>
             <h3 className="text-center text-xs font-semibold tracking-[0.15em] text-gray-600 uppercase mb-8">
               {teamSection.divisions.assetManagement}
@@ -41,6 +42,20 @@ export default function Team() {
           </FadeInUp>
           <StaggerChildren className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             {assetManagement.map((member) => (
+              <TeamCard key={member.name} member={member} />
+            ))}
+          </StaggerChildren>
+        </div>
+
+        {/* Property Managers */}
+        <div>
+          <FadeInUp>
+            <h3 className="text-center text-xs font-semibold tracking-[0.15em] text-gray-600 uppercase mb-8">
+              {teamSection.divisions.propertyManagers}
+            </h3>
+          </FadeInUp>
+          <StaggerChildren className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+            {propertyManagers.map((member) => (
               <TeamCard key={member.name} member={member} />
             ))}
           </StaggerChildren>
