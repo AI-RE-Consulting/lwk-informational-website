@@ -8,7 +8,7 @@ export interface Stat {
 export interface TeamMember {
   name: string;
   title: string;
-  division: 'Acquisitions' | 'Asset Management' | 'Property Managers';
+  division: 'Acquisitions' | 'Asset Management';
   bio: string;
   email?: string;
   linkedin?: string;
